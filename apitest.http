@@ -1,0 +1,34 @@
+### Create User
+POST http://localhost:8080/user
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email" : "hanif@example.com",
+  "username" : "hanif",
+  "name" : "Hanif",
+  "password" : "password"
+}
+
+### Update User
+PUT http://localhost:8080/user/b845ef73-8b7f-4273-b7f1-8e1ab35ff140
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email" : "update@example.com",
+  "username" : "update",
+  "name" : "Update",
+  "password" : "password"
+}
+
+### Find User By Id
+GET http://localhost:8080/user/b845ef73-8b7f-4273-b7f1-8e1ab35ff140
+Accept: application/json
+
+### Find All Users
+GET http://localhost:8080/user
+Accept: application/json
+
+### Delete User
+DELETE http://localhost:8080/user/b845ef73-8b7f-4273-b7f1-8e1ab35ff140
